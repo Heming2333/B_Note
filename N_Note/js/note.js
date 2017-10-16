@@ -1,0 +1,42 @@
+function noteClass(x,y){
+	var obj = new Object();
+	obj.x = x;
+	obj.y = y;
+    		obj.showlayout = function(){
+      		var c_div = document.createElement("div"); 
+      		c_div.className = [c_div.className, 'note_box'].join(' ');
+      		c_div.style.top = obj.x +"%";
+      		c_div.style.left = obj.y +"%";
+      		var c_u_div = document.createElement("div");
+      		var c_p_div = document.createElement("div");
+      		c_u_div.style.position = "absolute";
+      		c_p_div.style.position = "absolute";
+      		c_u_div.style.width = "80%";
+      		c_u_div.style.height = "60%";
+      		c_p_div.style.width = "80%";
+      		c_p_div.style.height = "20%";
+      		c_u_div.style.top = "10%";
+      		c_u_div.style.left = "10%";
+      		c_p_div.style.top="70%";
+      		c_p_div.style.left = "10%";
+      		var content = document.createElement("article");
+      		content.style.position="absolute";
+      		content.style.bottom = "0%";
+      		content.style.height ="100%";
+      		content.textContent = "记事贴ABC123 ......";
+      		content.className = [content.className, 'content'].join(' ');
+      		content.className = [content.className, 'font-face-display'].join(' ');
+      		var time = document.createElement("article");
+      		time.className = [time.className, 'timecontent'].join(' ');
+      		time.className = [time.className, 'font-face-display'].join(' ');
+      		time.textContent = "刚刚";
+      		c_u_div.appendChild(content);
+      		c_p_div.appendChild(time);
+      		c_div.appendChild(c_p_div);
+      		c_div.appendChild(c_u_div);
+      		c_div.onclick = note_conClick;
+      		c_div = Drag(c_div);
+      		return c_div;
+    		}
+  	return obj;
+};

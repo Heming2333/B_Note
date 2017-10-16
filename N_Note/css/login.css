@@ -1,0 +1,272 @@
+body{
+	  background-color: black;
+      color: white;
+      font-family: notefont, Verdana, Arial;
+      font-size: 12px;
+      background-image: -webkit-gradient(radial,
+                            50% 350, 1,
+                            50% 350, 400,
+                            from(rgba(255, 255, 255, 0.5)),
+                            to(rgba(255, 255, 255, 0)));
+     background-repeat: no-repeat;
+	padding: 0;
+	height: 100%;
+	margin: 0;
+	
+}
+@font-face {
+    font-family: "notefont";
+    src: url("../font/font1.ttf");
+}
+ 
+@font-face {
+    font-family: "notefont";
+    src: url("../font/font1.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+.font-face-display {
+    font-family:  notefont;
+}
+.page{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
+.logo{
+		position: absolute;
+		background-color: transparent;
+		opacity: 1;
+		-webkit-transform: scale3d(2,2,2);
+		border-radius: 0%;
+		-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+	.ite_anim{
+		-webkit-animation: ite_anim 1s linear;
+		animation-fill-mode: forwards;
+	}
+	@-webkit-keyframes ite_anim{
+		0%{
+			opacity: 0;
+			border-radius: 0%;
+			-webkit-transform: scale3d(2,2,2);
+		}
+		25%{
+			border-radius: 0%;
+		}
+		50%{
+			border-radius: 0%;
+		}
+		75%{
+			opacity: 1;
+			border-radius: 25%;
+			box-shadow: 0 0px 0px #8b8b8b inset,0 0px 0 #3d3d3d inset,0 0px 0px #8b8b8b inset;
+		}
+		100%{
+			opacity: 1;
+			border-radius: 50%;
+			box-shadow: 0 2px 2px #8b8b8b inset,0 -2px 4 #3d3d3d inset,0 -4px 6px #8b8b8b inset;
+			-webkit-transform: scale3d(1,1,1);
+		}
+	}
+	.logo > .n{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+	}
+	.logo > .n > .ul{
+		width: 50%;
+		height: 50%;
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		background: whitesmoke;
+	}
+	@-webkit-keyframes n_ul{
+		from{-webkit-border-radius: 0 0 0 0;}
+		to{-webkit-border-radius: 100% 0 0 0;}
+	}
+	@-webkit-keyframes n_ur{
+		0%{-webkit-border-radius: 0 0 0 0;}
+		50%{-webkit-border-radius: 0 100% 0 0; background-color: whitesmoke;}
+		100%{-webkit-border-radius: 0 100% 0 0; background-color: transparent; }
+	}
+	@-webkit-keyframes n_dl{
+		from{-webkit-border-radius: 0 0 0 0;}
+		to{-webkit-border-radius: 0 0 0 100%;}
+	}
+	@-webkit-keyframes n_dr{
+		from{-webkit-border-radius: 0 0 0 0;}
+		to{-webkit-border-radius: 0 0 100% 0;}
+	}
+	.n_ul{
+		-webkit-animation: n_ul 1s linear;
+		animation-fill-mode: forwards;
+	}
+	.n_ur{
+		-webkit-animation: n_ur 2s linear;
+		animation-fill-mode: forwards;
+	}
+	.n_dl{
+		-webkit-animation: n_dl 1s linear;
+		animation-fill-mode: forwards;
+	}
+	.n_dr{
+		-webkit-animation: n_dr 1s linear;
+		animation-fill-mode: forwards;
+	}
+	.logo > .n > .ur{
+		width: 50%;
+		height: 50%;
+		position: absolute;
+		top: 0%;
+		left: 50%;
+		background: whitesmoke;
+	}
+	.logo > .n > .dl{
+		width: 50%;
+		height: 50%;
+		position: absolute;
+		top: 50%;
+		left: 0%;
+		background: whitesmoke;
+	}
+	.logo > .n > .dr{
+		width: 50%;
+		height: 50%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		background: whitesmoke;
+	}
+	.logo > .n > .ur > article{
+		position: absolute;
+		bottom: 0%;
+		left: 20%;
+		color: whitesmoke;
+		font-size: 2.25em;
+		font-family: "agency fb";
+	}
+	
+.title{
+	position: absolute;
+	top: 38%;
+	width: 60%;
+	left: 20%;
+	height: 7%;
+	text-align: center;
+	font-size: 3.5em;
+}
+.version{
+	position: absolute;
+	top: 45%;
+	width: 60%;
+	left: 20%;
+	height: 5%;
+	text-align: center;
+	font-size: 1em;
+}
+.logic{
+	position: absolute;
+	top: 50%;
+	width: 70%;
+	left: 15%;
+	height: 40%;
+}
+#note
+{
+font-size: 1em;
+text-align:left;
+position: absolute;
+top: 75%;
+left: 10%;
+}
+input
+{
+	
+	display:block;
+	border-radius:5px;
+	background: #333333;
+	padding:12px 0px 12px 5px;
+	border:none;
+	color:#929999;                       
+	box-shadow:inset 0px 1px 5px #272727;
+	font-size:1.2em;
+	-webkit-transition:0.5s ease;
+}
+
+input:focus
+{
+	-webkit-transition:0.5s ease; 
+	box-shadow: 0px 0px 5px 1px #161718;
+}
+.userinput{
+	position: absolute;
+	top:30%;
+	width: 100%;
+}
+
+.passwordinput{
+	position: absolute;
+	bottom: 30%;
+	width: 100%;
+}
+.button
+{
+	background: #ff5f32;
+	border-radius:50%;
+	border:10px solid #222526;
+	font-size:0.9em;
+	color:#fff;
+	font-weight:bold;
+	cursor:pointer;
+	position:absolute;
+	right: -15%;
+	top: 25%;
+	text-align:center;
+	
+}
+
+.button:hover
+{
+background:#222526;
+border-color:#ff5f32;
+-webkit-transition:0.5s ease;
+}
+
+.button i
+{
+font-size:20px;
+-webkit-transition:0.5s ease;
+}
+
+.button:hover i
+{
+color:#ff5f32;
+-webkit-transition:0.5s ease;
+}
+  
+*:focus{outline:none;}
+::-webkit-input-placeholder {
+color:#929999;
+}
+
+.h1
+{
+text-align:center;
+color:#fff;
+font-size:1.4em;
+position: absolute;
+top: 10%;
+left: 10%;
+}
+
+
+a
+{
+color:whitesmoke;
+text-decoration:none;
+-webkit-transition:0.5s ease;
+}

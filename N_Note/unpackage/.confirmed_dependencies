@@ -1,0 +1,24 @@
+{
+  "index.html": {
+    "resources": [
+      "css/test.css",
+      "css/icono.min.css",
+      "js/index.js",
+      "js/note.js",
+      "font/font.otf",
+      "font/font1.ttf",
+      "js/drag.js"
+    ]
+  },
+  "login.html": {
+    "resources": [
+      "css/login.css",
+      "js/login.js",
+      "font/font1.ttf",
+      "login.html"
+    ],
+    "refer": [
+      "login.html"
+    ]
+  }
+}

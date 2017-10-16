@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+   <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title></title>
+      <link rel="stylesheet" href="css/test.css" />
+      <link rel="stylesheet" href="css/icono.min.css" />
+      <script type="text/javascript" src="js/index.js" ></script>
+      <script type="text/javascript" src="js/note.js" ></script>
+      <script type="text/javascript" src="js/drag.js" ></script>
+</head>
+<body> 
+  <div id="stage">
+    <div id="container">
+    		<div class="planebox"></div>
+    		<div id="plane" class="plane"></div>
+    		<div id="controller" class="controller menu_controller"  onclick="shapeClick()"></div>
+    		<div id="shape" class="shape menu_shape cube shape_anim" onclick="shapeClick()">
+	        <div class="item one"></div>
+	        <div class="item two"></div>
+	        <div class="item three"></div>
+	        <div class="item four"></div>
+	        <div class="item five"></div>
+	        <div class="item six"></div>
+	    </div>
+    		<div class="planebox"></div>
+    		<div id="menu" class="menu">
+    			<div class="one" id="home" onclick="homeClick()">
+    				<div class="ico">
+    					<span><i class="icono-home"></i></span>
+    				</div>
+    				<div class="text">
+    					首页
+    				</div>
+    			</div>
+    			<div class="two" id="note" onclick="noteClick()">
+    				<div class="ico">
+    					<span><i class="icono-document"></i></span>
+    				</div>
+    				<div class="text">
+    					记事
+    				</div>
+    			</div>
+    			<div class="three" id="friend">
+    				<div class="ico">
+    					<span><i class="icono-heart"></i></span>
+    				</div>
+    				<div class="text">
+    					好友
+    				</div>
+    			</div>
+    			<div class="four" id="share">
+    				<div class="ico">
+    					<span><i class="icono-paperClip"></i></span>
+    				</div>
+    				<div class="text">
+    					分享
+    				</div>
+    			</div>
+    			<div class="five" id="personal">
+    				<div class="ico">
+    					<span><i class="icono-user"></i></span>
+    				</div>
+    				<div class="text">
+    					个人
+    				</div>
+    			</div>
+    			<div class="six" id="library">
+    				<div class="ico">
+    					<span><i class="icono-book"></i></span>
+    				</div>
+    				<div class="text">
+    					博物馆
+    				</div>
+    			</div>
+    		</div>
+    		<div class="bg_effect">
+    			<div class="one effect"></div>
+    			<div class="two effect"></div>
+    			<div class="three effect"></div>
+    			<div class="four effect"></div>
+    			<div class="five effect"></div>
+    			<div class="six effect"></div>
+    			<div class="seven effect"></div>
+    			<div class="eight effect"></div>
+    			<div class="nine effect"></div>
+    			<div class="ten effect"></div>
+    			<div class="eleven effect"></div>
+    			<div class="twelve effect"></div>
+    			<div class="thirteen effect"></div>
+    			<div class="fourteen effect"></div>
+    			<div class="fiveteen effect"></div>
+    			<div class="sixteen effect"></div>
+    			<div class="seventeen effect"></div>
+    		</div>
+		<div class="title home_forward" id="homepage">
+			<div class="lu">
+				<span class="logo"><i class="icono-book"></i></span>
+			</div>
+			<div class="ru">
+				<article class="font-face-display">板 书</article>
+			</div>
+			<div class="ld">
+				<article class="font-face-display">v_</article>
+			</div>
+			<div class="rd">
+				<article class="font-face-display">2.0</article>
+			</div>
+		</div>    		
+    		<div class="note_page" id="notepage">
+    			<div class="planebox2"></div>
+    			<div id="noteboard" class="noteboard">
+    				<div class="controller note_controller" onclick="noteshapeClick()"></div>
+    				<div id="noteshape" class="note_shape shape cube shape_anim" onclick="noteshapeClick()">
+			 	        <div class="item one"></div>
+				        <div class="item two"></div>
+				        <div class="item three"></div>
+				        <div class="item four"></div>
+				        <div class="item five"></div>
+				        <div class="item six"></div>   								
+    					</div>
+    				<div id="n1" class="one class_btn" onclick="show_notelist(this)"></div>
+    				<div id="n2" class="two class_btn" onclick="show_notelist(this)"></div>
+    				<div id="n3" class="three class_btn" onclick="show_notelist(this)"></div>
+    				<div id="n4" class="four class_btn" onclick="show_notelist(this)"></div>
+    				<div id="n5" class="five class_btn" onclick="show_notelist(this)"></div>
+    				<div id="n6" class="six class_btn" onclick="show_notelist(this)"></div>
+    				<div id="n7" class="seven class_btn" onclick="show_notelist(this)"></div>
+    				<div id="n8" class="eight class_btn" onclick="show_notelist(this)"></div>
+    				<div id="n9" class="nine class_btn" onclick="show_notelist(this)"></div>
+    				<div id="n10" class="ten class_btn" onclick="show_notelist(this)"></div>
+    				<div id="n11" class="eleven class_btn" onclick="show_notelist(this)"></div>
+    				<div id="n12" class="twelve class_btn" onclick="show_notelist(this)"></div>
+    				<div id="n13" class="thirteen class_btn" onclick="show_notelist(this)"></div>
+    				<div id="n14" class="fourteen class_btn" onclick="show_notelist(this)"></div>
+    				<div id="n15" class="fiveteen class_btn" onclick="show_notelist(this)"></div>
+    				<div id="n16" class="sixteen class_btn" onclick="show_notelist(this)"></div>   				
+    			</div>
+    			
+    			<div id="notelist" class="notelist">
+    				<div id="nl_up" class="up">
+    						<article>Nboard_v2.0</article>
+    				</div>   				
+    				<div id="nl_down" class="down">
+    				</div>
+    				<div id="nl_left" class="left">
+    					<div id="btn_item1" class="one"></div>
+    					<div id="btn_item2" class="two"></div>
+    				</div>
+    				<div id="nl_right" class="right">
+    					<div id="btn_item3" class="one"></div>
+    					<div id="btn_item4" class="two"></div>
+    				</div>
+    				<div id="ite_btn" class="ite">
+    					<div id="n" class="n">
+     					<div id="n_ul" class="ul"></div>
+	    					<div id="n_ur" class="ur">
+	    						<article>B</article>
+	    					</div>
+	    					<div id="n_dl" class="dl"></div>
+	    					<div id="n_dr" class="dr">	    						
+	    					</div>   		
+	    				</div>
+    				</div>
+    				<div id="ite_back" class="ite_back" ></div>
+    				<div id="n_board" class="n_board">
+    				</div>
+    				<div id="note_lg" class="note_lg">
+    					<div class="up"></div>
+    					<div class="con">
+    						
+    					</div>
+    					<div class="left"></div>
+    					<div class="right"></div>
+    					<div class="down"></div>
+    				</div>
+    			</div>
+    		</div>
+    </div>
+  </div>
+
+</body>
+</html>
