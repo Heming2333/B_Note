@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window cv2auqe" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cv2auqe" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cv2auqe" class="cv2auqe"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p8e82a08f5e5d470fac9eb94c1599b002-iosstatusbar cv2auqe" xid="panel4" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cv2auqe"> 
+    <div style="height:30%;background-color:#e4c6d0;" class="text-center cv2auqe" __cid="cv2auqe"> 
+      <div style="height:60%;" __cid="cv2auqe" class="cv2auqe"> 
+        <img alt="" xid="headimg" class="img-circle img-thumbnail  cv2auqe" style="max-width:79px;max-height:79px;height:70px;width:70px;background-color:#FFE276;" src="@justepContextPath@/dragon_app/img/man/3.png" __cid="cv2auqe" data-bind="attr:{src:$model.user.val(&#34;headimgURL&#34;)}"> 
+      </div>  
+      <div style="height:17%;" __cid="cv2auqe" class="cv2auqe"> 
+        <label xid="nickName" class="text-white cv2auqe" style="font-weight:400;" __cid="cv2auqe" data-bind="text:$model.user.val(&#34;nickName&#34;)">亲，您还没有登录</label> 
+      </div>  
+      <div style="height:23%;" __cid="cv2auqe" class="cv2auqe"> 
+        <label xid="label2" style="font-size:xx-small;font-weight:200;height:80%;width:60%;" class="center-block cv2auqe" __cid="cv2auqe" data-bind="text:$model.user.val(&#34;userIntro&#34;)">label</label>
+      </div> 
+    </div>
+    <div style="height:70%;" __cid="cv2auqe" class="cv2auqe"> 
+      <div xid="div2" style="height:8%;text-align:center;" __cid="cv2auqe" class="cv2auqe"></div>  
+      <ul xid="ul1" __cid="cv2auqe" class="cv2auqe"> 
+        <li class="list-group-item cv2auqe" xid="li1" __cid="cv2auqe"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon pull-right cv2auqe" xid="button12" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-ios7-arrow-right&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cv2auqe"> 
+            <i xid="i18" class="icon-ios7-arrow-right text-muted cv2auqe" __cid="cv2auqe"></i>  
+            <span xid="span17" __cid="cv2auqe" class="cv2auqe"></span> 
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon cv2auqe" xid="button13" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;linear linear-lock&#34;}" __cid="cv2auqe"> 
+            <i xid="i26" class="icon-link text-warning linear linear-lock cv2auqe" __cid="cv2auqe"></i>  
+            <span xid="span18" __cid="cv2auqe" class="cv2auqe"></span> 
+          </a>  
+          <span xid="span16" style="font-size:xx-small;" __cid="cv2auqe" class="cv2auqe">密码修改</span> 
+        </li>  
+        <li class="list-group-item cv2auqe" xid="li1" __cid="cv2auqe" data-bind="event:{click:$model._callModelFn.bind($model, 'li1Click')}"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon pull-right cv2auqe" xid="button14" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-ios7-arrow-right&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cv2auqe"> 
+            <i xid="i27" class="icon-ios7-arrow-right text-muted cv2auqe" __cid="cv2auqe"></i>  
+            <span xid="span20" __cid="cv2auqe" class="cv2auqe"></span> 
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon cv2auqe" xid="button15" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-clipboard&#34;}" __cid="cv2auqe"> 
+            <i xid="i28" class="icon-clipboard cv2auqe" __cid="cv2auqe"></i>  
+            <span xid="span21" __cid="cv2auqe" class="cv2auqe"></span> 
+          </a>  
+          <span xid="span19" style="font-size:xx-small;" __cid="cv2auqe" class="cv2auqe">个人信息修改</span> 
+        </li> 
+      </ul>  
+      <div xid="div1" style="height:5%;" __cid="cv2auqe" class="cv2auqe"></div>
+      <ul xid="ul2" __cid="cv2auqe" class="cv2auqe"> 
+        <li class="list-group-item cv2auqe" xid="li1" __cid="cv2auqe"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon pull-right cv2auqe" xid="button16" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;icon-ios7-arrow-right&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cv2auqe"> 
+            <i xid="i29" class="icon-ios7-arrow-right text-muted cv2auqe" __cid="cv2auqe"></i>  
+            <span xid="span23" __cid="cv2auqe" class="cv2auqe"></span> 
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-xs btn-only-icon cv2auqe" xid="button17" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&#34;icon&#34;:&#34;linear linear-clouddownload&#34;}" __cid="cv2auqe"> 
+            <i xid="i30" class="text-danger linear linear-clouddownload cv2auqe" __cid="cv2auqe"></i>  
+            <span xid="span24" __cid="cv2auqe" class="cv2auqe"></span> 
+          </a>  
+          <span xid="span22" style="font-size:xx-small;" __cid="cv2auqe" class="cv2auqe">设置</span> 
+        </li>
+      </ul> 
+    </div>
+    <style __cid="cv2auqe" class="cv2auqe">.x-panel.p8e82a08f5e5d470fac9eb94c1599b002-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.p8e82a08f5e5d470fac9eb94c1599b002-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.p8e82a08f5e5d470fac9eb94c1599b002-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p8e82a08f5e5d470fac9eb94c1599b002-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p8e82a08f5e5d470fac9eb94c1599b002-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.p8e82a08f5e5d470fac9eb94c1599b002-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p8e82a08f5e5d470fac9eb94c1599b002-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p8e82a08f5e5d470fac9eb94c1599b002-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p8e82a08f5e5d470fac9eb94c1599b002-iosstatusbar >.x-panel-content {top: 0px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="msgDialog" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-config="{&#34;src&#34;:&#34;$model/UI2/B_Note/personalmsg.w&#34;}" __cid="cv2auqe" class="cv2auqe">
+    <div class="x-dialog-overlay cv2auqe" __cid="cv2auqe"></div>
+    <div class="x-dialog cv2auqe" style="display:none;" __cid="cv2auqe">
+      <div class="x-dialog-title cv2auqe" __cid="cv2auqe">
+        <button class="close cv2auqe" __cid="cv2auqe">
+          <span __cid="cv2auqe" class="cv2auqe">×</span>
+        </button>
+        <div class="x-dialog-title-text cv2auqe" __cid="cv2auqe"></div>
+      </div>
+      <div class="x-dialog-body cv2auqe" __cid="cv2auqe"></div>
+    </div>
+  </span>
+</div>
